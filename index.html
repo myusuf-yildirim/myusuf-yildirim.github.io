@@ -6,6 +6,17 @@
     <title>M. Yusuf YILDIRIM</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="sources/logo.png" type="image/png">
+    <style>
+        /* Additional mobile-specific inline styles for elements that might need extra tweaking */
+        @media screen and (max-width: 768px) {
+            .header-buttons a {
+                width: 100%;
+                text-align: center;
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -54,52 +65,53 @@
             <h2>Tecrübem</h2>
             <div class="about-content">
                 <div class="about-description">
-            <p>Bildiğim Yazılım Dilleri:</p>
-            <ul>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>Bashscript</li>    
-                <li>JavaScript</li>          
-            </ul>
-            
-            <p>Küçüklüğümden bu yana Linux'e ilgiliyim. Hatta kendi kullanımıma özel geliştirdiğim bir distro'm bile var.</p>
-            <p>Kullandığım ve kurduğum Linux Distro'ları:</p>
-            <ul>
-                <li>Pardus</li>
-                <li>Debian</li>
-                <li>Ubuntu</li>
-                <li>Arch</li>
-                <li>Tiny Core</li>    
-                <li>Raspbian</li>
-                <li>Linux Mint</li>
-                <li>Fedora</li>
-                <li>Zorin</li>
-                <li>Manjaro</li>          
-            </ul>
-            <p>Kaynak kodlarına contribution yaptığım / katkıda bulunduğum distro'lar: </p>
-            <ul>
-                <li>Pardus (PR)</li>
-                <li>Tiny Core</li>
-                <li>Raspbian</li>
-            </ul>
-            <p>GitHub üzerinden katkıda bulunduğum önemli projeler:</p>
-            <ul>
-                <li>IKEA gibi şirketlerin güvenlik amaçlı kullandığı ev otomasyon yazılımının ESP cihazları için oluşan BUG'ların çözümü</li>
-                <li>Bazı Linux dağıtımları</li>
-                <li>Konsolların yazılımını kıran homebrew sistemleri</li>
-                <li>Homebrew sistem uygulamaları</li>
-                <li>Çok kullanılan birden fazla Python kütüphaneleri</li>    
-                <li>Birden fazla yapay zeka uygulaması</li>          
-            </ul>
-            <p>Ve fazlası.</p>
+                    <p>Bildiğim Yazılım Dilleri:</p>
+                    <ul>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Bashscript</li>    
+                        <li>JavaScript</li>          
+                    </ul>
+                    <p>Küçüklüğümden bu yana Linux'e ilgiliyim. Hatta kendi kullanımıma özel geliştirdiğim bir distro'm bile var.</p>
+                    <p>Kullandığım ve kurduğum Linux Distro'ları:</p>
+                    <ul>
+                        <li>Pardus</li>
+                        <li>Debian</li>
+                        <li>Ubuntu</li>
+                        <li>Arch</li>
+                        <li>Tiny Core</li>    
+                        <li>Raspbian</li>
+                        <li>Linux Mint</li>
+                        <li>Fedora</li>
+                        <li>Zorin</li>
+                        <li>Manjaro</li>          
+                    </ul>
+                    <p>Kaynak kodlarına contribution yaptığım / katkıda bulunduğum distro'lar: </p>
+                    <ul>
+                        <li>Pardus (PR)</li>
+                        <li>Tiny Core</li>
+                        <li>Raspbian</li>
+                    </ul>
+                    <p>GitHub üzerinden katkıda bulunduğum önemli projeler:</p>
+                    <ul>
+                        <li>IKEA gibi şirketlerin güvenlik amaçlı kullandığı ev otomasyon yazılımının ESP cihazları için oluşan BUG'ların çözümü</li>
+                        <li>Bazı Linux dağıtımları</li>
+                        <li>Konsolların yazılımını kıran homebrew sistemleri</li>
+                        <li>Homebrew sistem uygulamaları</li>
+                        <li>Çok kullanılan birden fazla Python kütüphaneleri</li>    
+                        <li>Birden fazla yapay zeka uygulaması</li>          
+                    </ul>
+                    <p>Ve fazlası.</p>
                 </div>
+            </div>
         </section>
 
         <section class="projects" id="projects">
             <h2 id="projects-title">Projelerim</h2>
-            <div class="project-box">
+            
+            <div class="project-box" onclick="window.location.href='#navibot'">
                 <div class="project-image">
                     <img src="projects/navibot/navi.jpg" alt="NaviBot">
                 </div>
@@ -109,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="project-box" onclick="window.location.href='https://www.instagram.com/p/C8WYhlNsEld/';">
+            <div class="project-box" onclick="window.location.href='https://www.instagram.com/p/C8WYhlNsEld/'">
                 <div class="project-image">
                     <img src="projects/spot/spot.jpg" alt="Spot">
                 </div>
@@ -119,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="project-box" onclick="window.location.href='https://fact-ory.github.io';">
+            <div class="project-box" onclick="window.location.href='https://fact-ory.github.io'">
                 <div class="project-image">
                     <img src="projects/fact-ory/factory-logo.png" alt="FactOry">
                 </div>
@@ -139,22 +151,33 @@
                 <li><span id="phoneNumber" style="cursor: pointer; color: #5eff00;" onclick="copyPhoneNumber()">+90 537 870 77 77</span> numarasını</li>
             </ul>
             <p>kullanabilirsiniz 😊</p>
-
-            <script>
-                function copyPhoneNumber() {
-                  var phoneNumber = document.getElementById('phoneNumber').innerText;
-                  navigator.clipboard.writeText(phoneNumber).then(function() {
-                    alert('Numara kopyalandı: ' + phoneNumber);
-                  }).catch(function(err) {
-                    alert('Numara kopyalanırken bir hata oluştu: ' + err);
-                  });
-                }
-              </script>
         </section>
     </main>
 
     <footer>
         <p>M. Yusuf YILDIRIM</p>
     </footer>
+
+    <script>
+        function copyPhoneNumber() {
+            var phoneNumber = document.getElementById('phoneNumber').innerText;
+            navigator.clipboard.writeText(phoneNumber).then(function() {
+                alert('Numara kopyalandı: ' + phoneNumber);
+            }).catch(function(err) {
+                alert('Numara kopyalanırken bir hata oluştu: ' + err);
+            });
+        }
+
+        // Add mobile responsiveness to project boxes for clickable areas
+        document.addEventListener('DOMContentLoaded', function() {
+            var projectBoxes = document.querySelectorAll('.project-box');
+            projectBoxes.forEach(function(box) {
+                box.addEventListener('click', function() {
+                    var link = this.getAttribute('onclick').replace('window.location.href=', '').replace(/['"]+/g, '');
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
