@@ -148,9 +148,20 @@
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">FactOry</h3>
-                    <p class="project-description">Paragraf soruları çözmeyi çok severim, çünkü genellikle hoşuma giden ilginç bilgiler barındırırlar. Buradan esinlenerek, boş zamanlarımda Web Development konusunda kendimi geliştirmek için birkaç saatte ilk versiyonunu tamamladığım, ilginç bilgiler paylaşılan bir sosyal medya platformu. İlk versiyondan sonra zaman buldukça arayüz ve backend kısmında ufak ufak yenilikler yapmaya çalıştım. Site başlarda aktif olmadığından, ileriki süreçte SEO (Search Engine Optimization) için de çalışmalar yaptım. Aynı zamanda diğer platformlarda da tanıtımını yaptım. Kısa süre sonra okuldan dönüp merakla sitenin istatistiklerine baktığımda, normalde 50-60 civarında giriş alan FactOry, 7 saat içinde 12.000'den fazla giriş göstermişti. Aradan aylar geçse de günde 4.000-5.000 ziyaretçi oluyor. Hala zaman buldukça uygunsuz Fact'ları temizlemeye ve siteyi geliştirmeye çalışıyorum. Aynı zamanda E-Kitap okuyucularından girilip, göze zarar vermeden sonsuz ve ilginç bilgilerle dolu bir kitap gibi okunabilir :) Bu alana tıklayıp siteye ulaşabilirsiniz.</p>
+                    <p class="project-description">Paragraf soruları çözmeyi çok severim, çünkü genellikle hoşuma giden ilginç bilgiler barındırırlar. Buradan esinlenerek, boş zamanlarımda Web Development konusunda kendimi geliştirmek için birkaç saatte ilk versiyonunu tamamladığım, ilginç bilgiler paylaşılan bir sosyal medya platformu. İlk versiyondan sonra zaman buldukça arayüz ve backend kısmında ufak ufak yenilikler yapmaya çalıştım. Site başlarda aktif olmadığından, ileriki süreçte SEO (Search Engine Optimization) için de çalışmalar yaptım. Aynı zamanda diğer platformlarda da tanıtımını yaptım. Kısa süre sonra okuldan dönüp merakla sitenin istatistiklerine baktığımda, normalde 50-60 civarında giriş alan FactOry, 7 saat içinde 12.000'den fazla giriş göstermişti. Aradan aylar geçse de günde 4.000-5.000 ziyaretçi oluyor. Hala zaman buldukça uygunsuz Fact'ları temizlemeye ve siteyi geliştirmeye çalışıyorum. Aynı zamanda E-Kitap okuyucularından girilip, göze zarar vermeden sonsuz ve ilginç bilgilerle dolu bir kitap gibi okunabilir :) Bu kutuya tıklayıp siteye ulaşabilirsiniz.</p>
                 </div>
             </div>
+
+            <div class="project-box" onclick="window.location.href='https://www.youtube.com/watch?v=O8mf3UPJdV8'">
+                <div class="project-image">
+                    <img src="projects/gemini-on-esp/gemini-on-esp.png" alt="gemini-on-esp">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">ESP32'de Gemini API</h3>
+                    <p class="project-description">Bursluluk paramla aldığım, LVGL destekli ESP32-2432S028 kartım ile yaptığım ilk projelerden biriydi. LVGL (Light and Versatile Embedded Graphics Library) konusunda kendimi geliştirmemi de sağladı. Bu arada aynı zamanda LVGL'in contributor'larından biriyim. Temelde, Google'ın Gemini 1.5 Flash, Gemini 1.5 Pro, Gemini 1.0 Pro ve bazı diğer modellerinin API'ı sayesinde tüm CYD (Cheap Yellow Display) ve/veya LVGL ile çalışan neredeyse sınırsız sayıda cihaz üzerinde yapay zeka ile sohbet edebilmemizi sağlıyor. Ben, bütçemin yettiği 2.8 inç'lik CYD'de test ettim. Ancak gerekli config ayarları yapıldığı sürece, LVGL sayesinde internete bağlanabilen ve ekranı olan neredeyse her cihazda çalışabilir. Ayrıca, Gemini kullanmamın sebebi, OpenAI'ın aksine Google'ın API'larını ücretsiz sunması. Eskiden, OpenAI'nın API anahtarları da ücretsizken GPT modelleriyle yaptığım projelerim de vardı. Ancak şu an GPT API'larına bütçem yetmiyor. Bu kutuya tıklayıp ilgili videoyu izleyebilirsiniz. Ayrıca bu projem için dünya çapında bir çok soru aldım. Çok popüler oldu.</p>
+                </div>
+            </div>
+
         </section>
 
         <section class="about">
@@ -180,7 +191,6 @@
             });
         }
 
-        // Add mobile responsiveness to project boxes for clickable areas
         document.addEventListener('DOMContentLoaded', function() {
             var projectBoxes = document.querySelectorAll('.project-box');
             projectBoxes.forEach(function(box) {
