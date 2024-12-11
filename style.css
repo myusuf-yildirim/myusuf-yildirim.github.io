@@ -215,7 +215,7 @@ header h1 {
 
 .about-image {     
     width: 150px;     
-    height: 270px;     
+    height: 270px;
     overflow: hidden;     
     border-radius: 10px; 
 }  
@@ -249,39 +249,61 @@ ul {
     padding-left: 50px;
   }
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
     }
 
     header {
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: transform 0.3s ease;
     }
+    
+    header.hide {
+        transform: translateY(-100%);
+    }    
 
     .logo-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        margin-bottom: 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin: 0;
     }
 
     .header-buttons {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+        width: auto;
         align-items: center;
     }
 
     .social-buttons {
-        margin-right: 0;
-        margin-bottom: 15px;
+        margin-right: 10px;
+        margin-bottom: 0;
     }
 
     .language-buttons {
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
 
+    /* Rest of the existing mobile styles remain the same */
     #projects-title {
         font-size: 2rem;
         text-align: center;
