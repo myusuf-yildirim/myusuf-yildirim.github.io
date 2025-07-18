@@ -187,9 +187,7 @@
             <p>Bana ulaşmak için:</p>
             <ul>
                 <li>Sitenin sağ alt kısmındaki iletişim butonunu,</li>
-                <li><a href="mailto:tachion.software@gmail.com" style="color: #5eff00;">tachion.software@gmail.com</a> adresini,</li>
-                <li><span id="phoneNumber" style="cursor: pointer; color: #5eff00;" onclick="copyPhoneNumber()">+90 542 551 45 81</span> numarasını (kendi numaram)</li>
-                <li><span id="phoneNumber" style="cursor: pointer; color: #5eff00;" onclick="copyPhoneNumber()">+90 537 870 77 77</span> numarasını (babamın numarası)</li>
+                <li><a href="mailto:tachion.software@gmail.com" style="color: #5eff00;">tachion.software@gmail.com</a> adresini</li>
             </ul>
             <p>kullanabilirsiniz 😊</p>
         </section>
@@ -200,15 +198,6 @@
     </footer>
 
     <script>
-        function copyPhoneNumber() {
-            var phoneNumber = document.getElementById('phoneNumber').innerText;
-            navigator.clipboard.writeText(phoneNumber).then(function() {
-                alert('Numara kopyalandı: ' + phoneNumber);
-            }).catch(function(err) {
-                alert('Numara kopyalanırken bir hata oluştu: ' + err);
-            });
-        }
-
         document.addEventListener('DOMContentLoaded', function() {
             var projectBoxes = document.querySelectorAll('.project-box');
             projectBoxes.forEach(function(box) {
